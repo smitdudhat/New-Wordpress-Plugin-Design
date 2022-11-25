@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 100%;
 	overflow: hidden;
-	padding: 30px 0;
+	padding: 30px 0 68px;
 }
 
 .custom_permalinks .cp_left_column {
@@ -108,7 +108,6 @@
 
 .cp_accodian .cp_accodian_content .cp_accodian_tabs.active {
 	background: #3a9fbf;
-	padding-bottom: 15px;
 }
 
 .cp_accodian .cp_accodian_content .cp_accodian_tabs .cp_accodian_tab {
@@ -116,6 +115,20 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+.cp_accodian .cp_accodian_content .cp_accodian_tabs .cp_accodian_tab .accodian_tab_main_title{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	max-width: calc(100% - 50px);
+	width: 100%;
+}
+
+.cp_accodian .cp_accodian_content .cp_accodian_tabs.active .cp_accodian_tab .accodian_tab_main_title,
+.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs_content .cp_accodian_tab_content .cp_tabs_content .cp_sub_accodian_tabs .cp_accodian_tab{
+	cursor: pointer;
 }
 
 .cp_accodian .cp_accodian_content .cp_accodian_tabs .cp_accodian_tab .cp_toogle_btn {
@@ -205,12 +218,17 @@
 	fill: #fff;
 }
 
+.cp_accodian_tab_content.cp_accodian_main_tab_content{
+	padding-bottom: 15px;
+}
+
 .cp_accodian_tab_content,
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form {
 	padding: 0 15px;
 }
 
-.cp_accodian_tab_content .cp_divider {
+.cp_accodian_tab_content .cp_divider,
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row::after {
 	background: #ffffff;
 	border-radius: 100px;
 	display: inline-block;
@@ -248,7 +266,8 @@
 	height: 2px;
 }
 
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form {
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box,
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column {
 	padding: 20px 0 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -289,12 +308,14 @@
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row select{
 	background-image: url("../images/svg/down_arrow.svg");
-	background-position: top 6px right;
+	background-position: top 8px right;
 	background-repeat: no-repeat;
 	background-size: 13px;
 	-webkit-appearance: none;
   	-moz-appearance: none;
 	appearance: none;
+	background-color: transparent;
+	font-weight: 500;
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input{
@@ -307,4 +328,118 @@
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input.disable{
 	font-weight: 400;
 	color: rgba(35, 40, 45, 0.75);
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box{
+	margin: 0 -15px;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column{
+	width: 100%;
+	padding: 20px 15px 5px;
+	align-items: center;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	padding: 15px 0;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row:first-of-type{
+	padding-top: 0;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row:last-of-type{
+	padding-bottom: 0;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row:first-of-type::after{
+	display: none;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row::after{
+	content: "";
+	background: #3A9FBF;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	left: -5px;
+	right: -5px;
+	width: calc(100% + 15px);
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row {
+	max-width: 300px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.cp_url_input{
+	max-width: 390px;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.delete_icon{
+	max-width: 25px;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row label{
+	margin-bottom: 5px;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row input,
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row select{
+	margin-left: 0;
+	width: 100%;
+	max-width: 100%;
+	color: #23282D;
+}
+
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_btn_row{
+	max-width: 100%;
+	align-items: flex-end;
+	margin-top: 15px;
+}
+
+.cp_bottom_bar{
+	position: fixed;
+	bottom: 0;
+	left: 195px;
+	right: 0;
+	z-index: 99;
+}
+
+.cp_bottom_bar .cp_bottom_bar_row{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #3A9FBF;
+	box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.24);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding: 15px;
+}
+
+.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs_content .cp_tabs_content_box .cp_bottom_bar .cp_bottom_bar_row .cp_bar_icon_text p {
+	font-weight: 400;
+	font-size: 20px;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 5px;
+}
+
+.cp_bottom_bar .cp_bottom_bar_row .cp_bar_icon_text p img{
+	max-width: 22px;
+}
+
+.cp_bottom_bar .cp_bottom_bar_row .cp_bar_btn a{
+	display: inline-block;
+	padding: 8px 25px;
 }

@@ -43,13 +43,18 @@ p {
 }
 
 .cp_arrow_icon.cp_arrow_up,
-.cp_accodian_tabs.active .cp_sub_accodian_tabs.active .cp_arrow_icon.cp_arrow_up {
+.cp_accodian_tabs.active .cp_sub_accodian_tabs .open_slide .cp_arrow_icon.cp_arrow_up {
 	transform: rotate(-90deg);
 }
 
 .cp_arrow_icon.cp_arrow_down,
 .cp_accodian_tabs.active .cp_accodian_tab .cp_arrow_icon {
 	transform: rotate(90deg);
+}
+
+.cp_accodian_tabs.active .cp_accodian_tab .close_slide .cp_arrow_icon,
+.cp_accodian_tabs.active .cp_sub_accodian_tabs .close_slide .cp_arrow_icon.cp_arrow_up{
+	transform: none;
 }
 
 .btn {
@@ -60,4 +65,11 @@ p {
 	border-radius: 6px;
 	border: none;
 	padding: 15px 20px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn.disable{
+	background: #DDDDDD;
+	color: #23282D;
 }
