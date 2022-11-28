@@ -76,8 +76,10 @@ jQuery(document).ready(function ($) {
 	// Bottom Bar Width Set
 	function bottom_bar() {
 		var left_column_width_get = $('.custom_permalinks .cp_left_column').width();
-		var left_column_width = left_column_width_get + 'px';
-		$('.custom_permalinks .cp_bottom_bar').css('width', left_column_width);
+		var left_column_left_pos_get = $('.custom_permalinks .cp_left_column').position();
+		var left_column_width = left_column_width_get + 15 + 'px';
+		var left_column_left_pos = left_column_left_pos_get.left  + 'px';
+		$('.custom_permalinks .cp_bottom_bar').css({"width": left_column_width, "left": left_column_left_pos});
 	}
 
 	$(window).on('load', function () {

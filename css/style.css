@@ -380,13 +380,13 @@
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row {
-	max-width: 300px;
+	max-width: 25%;
 	flex-direction: column;
 	align-items: flex-start;
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.cp_url_input{
-	max-width: 390px;
+	max-width: calc(40% - 25px);
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.delete_icon{

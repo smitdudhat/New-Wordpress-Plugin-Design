@@ -1,4 +1,108 @@
-/* 960PX MAX Media Quries */
-@media only screen and (max-width: 960px) {}
+/* 1366PX MAX Media Quries */
+@media only screen and (max-width: 1366px) {
+	.custom_permalinks .cp_left_column{
+		max-width: 100%;
+	}
+	.custom_permalinks .cp_right_column{
+		margin-top: 30px;
+	}
+	.custom_permalinks .cp_right_column h3{
+		display: none;
+	}
+}
+/* 1199PX MAX Media Quries */
+@media only screen and (max-width: 1199px) {
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 15px;
+		max-width: 300px;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row select,
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input{
+		margin-left: 0;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row.full_row{
+		align-items: flex-end;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row{
+		gap: 0;
+	}
+}
 /* 783PX MAX Media Quries */
-@media only screen and (max-width: 783px) {}
+@media only screen and (max-width: 783px) {
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row{
+		max-width: calc(50% - 10px);
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.cp_url_input{
+		max-width: calc(100% - 40px);
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row {
+		gap: 15px;
+		align-items: self-end;
+		justify-content: space-between;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_four_row {
+		gap: 15px;
+		align-items: self-end;
+		justify-content: space-between;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row.cp_btn_row {
+		max-width: 100%;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row:first-of-type{
+		max-width: 230px;
+	}
+}
+/* 700PX MAX Media Quries */
+@media only screen and (max-width: 700px) {
+	.btn{
+		font-size: 16px;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box_1 .cp_form_row {
+		max-width: 100%;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box_1 .cp_form_row:first-of-type{
+		margin-bottom: 30px;
+	}
+
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row select,
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input{
+		width: 100%;
+		max-width: 100%;
+		min-width: initial;
+	}
+}
+
+/* 575PX MAX Media Quries */
+@media only screen and (max-width: 575px) {
+	.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs ul li a{
+		font-size: 16px;
+		padding: 0 8px;
+	}
+	.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs_content .cp_tabs_content_box p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.cp_accodian .cp_accodian_content{
+		padding: 15px;
+	}
+	.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row{
+		max-width: 100%;
+	}
+	.cp_right_column .cp_review_popup{
+		padding: 25px 15px;
+	}
+	.cp_right_column .cp_review_popup h4{
+		font-size: 20px;
+	}
+	.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul li a{
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+	.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul{
+		gap: 15px;
+	}
+}

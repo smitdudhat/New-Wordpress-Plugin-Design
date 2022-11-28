@@ -17,6 +17,19 @@ p {
 	max-width: 1723px;
 	margin: 0 0 0 auto;
 	background: #f5f8fa;
+	width: calc(100% - 160px);
+}
+
+@media only screen and (max-width: 960px) {
+	#wpbody{
+		width: calc(100% - 34px);
+	}
+}
+
+@media only screen and (max-width: 783px) {
+	#wpbody{
+		width: 100%;
+	}
 }
 
 .container {
