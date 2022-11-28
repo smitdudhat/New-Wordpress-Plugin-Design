@@ -76,12 +76,14 @@ jQuery(document).ready(function ($) {
 	// Bottom Bar Width Set
 	function bottom_bar() {
 		var left_column_width_get = $('.custom_permalinks .cp_left_column').width();
-		var left_column_width_get = left_column_width_get + 'px';
-		$('.custom_permalinks .cp_bottom_bar').css('width', left_column_width_get)
+		var left_column_width = left_column_width_get + 'px';
+		$('.custom_permalinks .cp_bottom_bar').css('width', left_column_width);
 	}
 
 	$(window).on('load', function () {
-		bottom_bar();
+		setTimeout(function () {
+			bottom_bar();
+		}, 100);
 		$(window).resize(function () {
 			setTimeout(function () {
 				bottom_bar();

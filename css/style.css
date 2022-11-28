@@ -58,7 +58,8 @@
 	bottom: -15px;
 }
 
-.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs ul li a.active::before {
+.custom_permalinks .cp_left_column .cp_main_tabs .cp_tabs ul li a.active::before,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul li a.cp_tab::after {
 	content: "";
 	width: 12px;
 	height: 6px;
@@ -290,7 +291,9 @@
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row label,
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row select,
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input {
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row label,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input {
 	font-weight: 600;
 	font-size: 16px;
 	color: #23282d;
@@ -298,7 +301,8 @@
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row select,
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input {
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input {
 	border: none;
 	min-width: 150px;
 	border-bottom: 1px solid #23282d;
@@ -318,14 +322,16 @@
 	font-weight: 500;
 }
 
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input{
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input{
 	padding-left: 0;
 	max-width: 300px;
 	width: 100%;
 	background-color: transparent;
 }
 
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input.disable{
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_row input.disable,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input.disable {
 	font-weight: 400;
 	color: rgba(35, 40, 45, 0.75);
 }
@@ -392,7 +398,8 @@
 }
 
 .cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row input,
-.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row select{
+.cp_sub_accodian_tabs .cp_sub_accodian_tab_content .cp_sub_accodian_form .cp_form .cp_form_box.cp_form_row_box .cp_form_four_column .cp_form_row select,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input{
 	margin-left: 0;
 	width: 100%;
 	max-width: 100%;
@@ -411,6 +418,7 @@
 	left: 195px;
 	right: 0;
 	z-index: 99;
+	width: calc(100% - 655px);
 }
 
 .cp_bottom_bar .cp_bottom_bar_row{
@@ -442,4 +450,145 @@
 .cp_bottom_bar .cp_bottom_bar_row .cp_bar_btn a{
 	display: inline-block;
 	padding: 8px 25px;
+}
+
+.cp_right_column h3{
+	color: #23282D;
+	font-weight: 400;
+	font-size: 30px;
+	margin: 0 0 20px;
+}
+
+.cp_right_column h3 b{
+	font-weight: 600;
+}
+
+.cp_right_column .cp_review_popup{
+	background: #FFFFFF;
+	box-shadow: 15px 70px 100px rgba(0, 0, 0, 0.06);
+	border-radius: 14px;
+	padding: 25px 30px;
+}
+
+.cp_right_column .cp_review_popup h4{
+	font-weight: 600;
+	font-size: 25px;
+	color: #23282D;
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul li a{
+	border-radius: 5px;
+	background-color: rgba(43,120,228,0.2);
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+	color: #3A9FBF;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul li a.cp_tab{
+	background: #3A9FBF;
+	color: #fff;
+	position: relative;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tabs ul li a.cp_tab::after{
+	transform: rotate(180deg);
+	bottom: -6px;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content{
+	background: #3A9FBF;
+	padding: 15px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row{
+	gap: 8px;
+	position: relative;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row label,
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input{
+	color: #fff;
+	border-color: #fff;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row input::placeholder{
+	color: #F2F2F2;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox{
+	flex-direction: initial;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox input{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 0;
+	right: 0;
+	min-width: initial;
+	margin: 0;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox span{
+	width: 18px;
+	height: 18px;
+	border: 1px solid #FFFFFF;
+	border-radius: 100%;
+	position: relative;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox span::after{
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	background-color: #fff;
+	border-radius: 100%;
+	width: 8px;
+	height: 8px;
+	opacity: 0;
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox input:checked + span::after{
+	opacity: 1;
+}
+
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox label{
+	font-weight: 400;
+	font-size: 14px;
+	color: #F2F2F2;
+	line-height: 18px;
+	max-width: calc(100% - 26px);
+}
+
+.cp_right_column .cp_review_popup .cp_review_popup_tab .cp_review_tab_content .cp_review_form .cp_form_row.cp_checkbox label a{
+	color: #FFFFFF;
+	text-decoration: underline;
 }
